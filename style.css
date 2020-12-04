@@ -19,12 +19,12 @@ body{
 }
 
 .topnav a:hover {
-  background-color: white;
+  background-color: #6C9B7D;
   color: black;
 }
 
 .topnav a.active {
-  background-color: DodgerBlue;
+  background-color: #386C5F;
   color: white;
 }
 
@@ -43,7 +43,7 @@ body{
     .box {
         padding: 10px;
         font-size: 100%;
-        background-color: gray;
+        background-color: #007D8A;
         text-align: center;
     }
 
