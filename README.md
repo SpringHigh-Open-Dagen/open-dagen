@@ -1,1 +1,1 @@
-# open-dagen
+# open-dagen website for Spring High
