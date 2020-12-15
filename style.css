@@ -2,6 +2,39 @@ body{
   font-family: "Trebuchet MS","trebuchet","Helvetica",Sans-Serif !important;
 }
 
+/* NAV */
+.topnav {
+  overflow: hidden;
+  background-color: #53CD8A;
+  padding: 10px;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #6C9B7D;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #386C5F;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+/* NAV END */
+
+/* BACKGROUND END */
+
 .wrapper {
         display: grid;
         grid-gap: 10px;
