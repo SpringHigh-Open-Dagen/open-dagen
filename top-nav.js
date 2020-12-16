@@ -102,7 +102,7 @@ class TopNav extends HTMLElement {
           
         </style>
         <div class="topnav">
-          <a href="index.html">Home</a>
+          <a href="/index.html">Home</a>
           <div class="topnav-right">
           <div class="theme-switch-wrapper">
           <label class="theme-switch" for="checkbox">
@@ -110,8 +110,8 @@ class TopNav extends HTMLElement {
          <div class="slider round"></div>
         </label>
         </div>
-            <a href="Kinderen/home_kinderen.html">Kinderen</a>
-            <a href="Ouders/home_ouders.html">Ouders</a>
+            <a href="/Kinderen/home_kinderen.html">Kinderen</a>
+            <a href="/Ouders/home_ouders.html">Ouders</a>
           </div>
         </div>
       `;
@@ -119,3 +119,30 @@ class TopNav extends HTMLElement {
   }
   
   customElements.define("top-nav", TopNav);
+
+
+
+  // code for dark mode
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
