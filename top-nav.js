@@ -110,6 +110,7 @@ class TopNav extends HTMLElement {
          <div class="slider round"></div>
         </label>
         </div>
+            <a href="/faq/home_faq.html">FAQ</a>
             <a href="/Kinderen/home_kinderen.html">Kinderen</a>
             <a href="/Ouders/home_ouders.html">Ouders</a>
           </div>
