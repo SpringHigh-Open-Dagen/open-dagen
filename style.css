@@ -92,7 +92,10 @@ body{
       grid-row-start: 7;
       grid-row-end : 8;
     }
-    * {box-sizing:border-box}
+
+/* Slideshow */
+
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -170,6 +173,9 @@ body{
   transition: background-color 0.6s ease;
 }
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 /* Fading animation */
 .fade {
