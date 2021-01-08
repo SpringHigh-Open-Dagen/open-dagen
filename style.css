@@ -11,6 +11,7 @@ body{
     --font-color: black;
     --bg-color: whitesmoke;
     --heading-color: white;
+    --planning: lightgray;
 }
 
 [data-theme="dark"] {
@@ -19,6 +20,7 @@ body{
     --font-color: whitesmoke;
     --bg-color: #161625;
     --heading-color: whitesmoke;
+    --planning: dimgray;
 }
 /* darkmode end*/
 
@@ -37,60 +39,56 @@ body{
         text-align: center;
     }
 
-    .a {
+    
+    .c {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end : 2;
     }
-    .b {
-        grid-column-start: 1;
+    .d {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end : 2;
+        background-color: var(--planning);
+        Border-radius: 25px;
+        grid-gap-top: 25px;
+    }
+   
+    .f{
+        grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end : 3;
-    }
-    .c {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end : 4;
-    }
-    .d {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end : 4;
-    }
-    .e{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end : 5;
-        
-    }
-    .f{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end : 7;
+        background-color: rgb(22, 156, 127);
+        Border-radius: 25px;
     }
     .g {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end : 8;
+        grid-row-start: 3;
+        grid-row-end : 4;
+        background-color: rgb(104, 161, 39);
+        Border-radius: 25px;
     }
     .h {
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 7;
-        grid-row-end : 8;
+        grid-row-start: 3;
+        grid-row-end : 4;
     }    
     .i{
       grid-column-start: 3;
       grid-column-end: 4;
-      grid-row-start: 7;
-      grid-row-end : 8;
+      grid-row-start: 3;
+      grid-row-end : 4;
+    }
+    .a{
+      grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end : 3;
     }
 
 /* Slideshow */
@@ -161,17 +159,7 @@ body{
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+
 
 .active, .dot:hover {
   background-color: #717171;
@@ -235,3 +223,9 @@ grid-row-start: 1;
 grid-row-end : 2;
 }
 /*------------footer-----------*/
+
+/*-- round fotos ----*/
+.img-round{
+  border-radius: 40%;
+  float: left;
+}
