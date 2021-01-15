@@ -1,11 +1,11 @@
 .wrapper {
     display: grid;
     grid-template-areas:
-      'gr-slideshow gr-slideshow gr-slideshow ........... gr-planning'
-      'gr-slideshow gr-slideshow gr-slideshow ........... gr-planning'
-      'gr-info-site gr-quotes    gr-quotes    gr-quotes   gr-quotes'
-      'gr-info-site gr-quotes    gr-quotes    gr-quotes   gr-quotes'
-      'gr-camyre    gr-article1  gr-article1  gr-article2 gr-article2';
+      'gr-slideshow gr-slideshow gr-slideshow gr-slideshow gr-planning'
+      'gr-slideshow gr-slideshow gr-slideshow gr-slideshow gr-planning'
+      'gr-info-site gr-quotes    gr-quotes    gr-quotes    gr-quotes'
+      'gr-info-site gr-quotes    gr-quotes    gr-quotes    gr-quotes'
+      'gr-camyre    gr-article1  gr-article1  gr-article2  gr-article2';
     grid-gap: 10px;
     grid-template-rows: 200px 200px auto auto auto;
     width: 1200px;
