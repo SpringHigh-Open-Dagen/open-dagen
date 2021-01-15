@@ -1,20 +1,15 @@
-/* Start manual slideshow */
-// var slideIndex = 1;
-// showSlides(slideIndex);
+var slideIndex = 0;
+revolveSlides(slideIndex);
 
 // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
 // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-/* Start automatic slideshow */
-var slideIndex = 0;
-showSlides();
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 function showSlides(n) {
   var i;
@@ -32,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function showSlides() {
+function revolveSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
@@ -41,6 +36,6 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(revolveSlides, 5000); // Change image every 5 seconds
 }
 

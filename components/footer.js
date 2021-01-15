@@ -9,9 +9,8 @@ class Footer extends HTMLElement {
         .footer {
           display: grid;
           grid-template-areas:
-            'footer-left footer-middle footer-right';
+            'gr-footer-left gr-footer-middle gr-footer-right';
           grid-gap: 10px;
-          border-radius: 25px;
           width: 100%;
           background-color:#14715D;
           padding: 20px 0px;
@@ -25,15 +24,15 @@ class Footer extends HTMLElement {
         }
 
         .footer-left {
-          grid-area: footer-left;
+          grid-area: gr-footer-left;
         }
 
         .footer-middle {
-          grid-area: footer-middle;
+          grid-area: gr-footer-middle;
         }
 
         .footer-right {
-          grid-area: footer-right;
+          grid-area: gr-footer-right;
         }
       </style>
 

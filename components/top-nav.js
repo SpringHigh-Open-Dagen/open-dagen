@@ -10,7 +10,6 @@ class TopNav extends HTMLElement {
           overflow: hidden;
           background-color: #52A68F;
           padding: 10px;
-          border-radius: 25px;
         }
         
         .topnav a {
@@ -30,7 +29,6 @@ class TopNav extends HTMLElement {
         .topnav a.active {
           background-color: #14715D;
           color: black;
-          border-radius: 25px;
         }
         
         .topnav-right {
