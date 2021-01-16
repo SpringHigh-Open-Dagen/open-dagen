@@ -41,7 +41,7 @@ class Footer extends HTMLElement {
           Herman Poortstraat 17, 1064 BR Amsterdam<br>
           Telefoon: <a href="tel:+31205893038">020 5893038</a><br>
         </div>
-        <div class="footer-middle">TEXT TEXT TEXT</div>
+        <div class="footer-middle"><a href="https://www.springhigh.nl">www.springhigh.nl</a></div>
         <div class="footer-right"><a href="mailto:info@springhigh.nl">info@springhigh.nl</a></div>
       </div>
       `;
