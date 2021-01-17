@@ -1,0 +1,5 @@
+body{
+  font-family: "Trebuchet MS","trebuchet","Helvetica",Sans-Serif !important;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}

@@ -1,0 +1,54 @@
+.wrapper {
+    display: grid;
+    grid-template-areas:
+      'gr-slideshow gr-slideshow gr-slideshow gr-slideshow gr-planning'
+      'gr-info-site gr-info-site gr-quotes    gr-quotes    gr-quotes'
+      'gr-camyre    gr-article1  gr-article1  gr-article2  gr-article2';
+    grid-gap: 10px;
+    grid-template-rows: 400px auto auto;
+    width: 1200px;
+    margin: auto;
+}
+
+.box {
+    padding: 20px;
+    font-size: 100%;
+    background-color: none;
+    text-align: left;
+}
+ 
+.slideshow {
+    grid-area: gr-slideshow;
+}
+
+.planning {
+    grid-area: gr-planning;
+    background-color: var(--planning);
+    border-radius: 25px;
+}
+
+.info-site {
+    grid-area: gr-info-site;
+}
+
+.quotes {
+    grid-area: gr-quotes;
+    background-color: rgb(22, 156, 127);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.camyre {
+    grid-area: gr-camyre;
+    background-color: rgb(104, 161, 39);
+    border-radius: 25px;
+}
+
+.text-left {
+    grid-area: gr-article1;
+}    
+
+.text-right {
+    grid-area: gr-article2;
+}
+
