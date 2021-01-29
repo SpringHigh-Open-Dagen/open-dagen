@@ -103,10 +103,15 @@
     display: grid;
     grid-template-areas: 
     '. . .'
-    '. grd-quiz .'
+    '. . . . . . .grd-quiz.'
     '. . .';
-    grid-template-columns: 25%, 50%, 25%;;
+    grid-template-columns: 25%, 50%, 25%;
     grid-template-rows: 25%, 50%, 25%;
+  }
+  .uitslag-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
   }
 
 

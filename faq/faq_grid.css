@@ -1,8 +1,4 @@
-body{
-  font-family: "Trebuchet MS","trebuchet","Helvetica",Sans-Serif !important;
-  background-color: var(--bg-color);
-  color: var(--font-color);
-}
+
 .wrapper {
         display: grid;
         grid-gap: 0px;
@@ -12,7 +8,7 @@ body{
     }
 
     .box {
-        color: black;
+       
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
