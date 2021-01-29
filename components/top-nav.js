@@ -7,13 +7,18 @@ class TopNav extends HTMLElement {
     this.innerHTML = `
       <style>
         .topnav {
+          display: flex;
+          align-items: center;
           overflow: hidden;
-          background-color: rgb(83, 205, 138);
+          background-color: #00cd86;
           padding: 10px;
+        }
+
+        .topnav-push-right {
+          margin-left: auto;
         }
         
         .topnav a {
-          float: left;
           color: white;
           text-align: center;
           padding: 14px 16px;
@@ -22,17 +27,13 @@ class TopNav extends HTMLElement {
         }
         
         .topnav a:hover {
-          background-color: rgb(83, 205, 138);
+          background-color: #00cd86;
           color: black;
         }
         
         .topnav a.active {
           background-color: #14715D;
           color: black;
-        }
-        
-        .topnav-right {
-          float: right;
         }
 
         /*Simple css to style it like a toggle switch*/
@@ -41,8 +42,6 @@ class TopNav extends HTMLElement {
           align-items: center;
           float: right;
           margin-top: 6px;
-      
-          
             em {
               margin-left: 10px;
               font-size: 1rem;
@@ -99,18 +98,20 @@ class TopNav extends HTMLElement {
         </style>
 
         <div class="topnav">
+          <a href="/index.html"><img src="/images/logo_3.png" width="200"></a>
           <a href="/index.html">Home</a>
-          <div class="topnav-right">
+
+          <a class="topnav-push-right" href="/faq/home_faq.html">FAQ</a>
+          <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
+          <a href="/ouders/home_ouders.html">Ouders</a>
+          <a href="/leerlingen/quiz/quiz.html">Quiz</a>
+          <a href="/projecten/projecten.html">Projecten</a>
+          <a href="/SH-team/team.html">Ons team</a>
           <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-         <div class="slider round"></div>
-        </label>
-        </div>
-            <a href="/faq/home_faq.html">FAQ</a>
-            <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
-            <a href="/ouders/home_ouders.html">Ouders</a>
-            <a href="/leerlingen/quiz/quiz.html">Quiz</a>
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
           </div>
         </div>
       `;

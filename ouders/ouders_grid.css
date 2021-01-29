@@ -1,43 +1,37 @@
-body {
-  font-family: "Trebuchet MS","trebuchet","Helvetica",Sans-Serif !important;
-  background-color: var(--bg-color);
-  color: var(--font-color);
-}
 
 .wrapper {
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: auto auto auto;
-        width: 1200px;
-        margin: auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto;
+  width: 1200px;
+  margin: auto;
 }
 
 .box {
-    color: black;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: none;
 }
 
 .a {
-    grid-column: 1 / span 3;
-    grid-row: 1;
+  grid-column: 1 / span 3;
+  grid-row: 1;
 }
 
 .b {
-    grid-column: 0 ;
-    grid-row: 0;
+  grid-column: 0 ;
+  grid-row: 0;
 }
 
 .c {
-    grid-column: 1 / span 2 ;
-    grid-row: 2 ;
+  grid-column: 1 / span 2 ;
+  grid-row: 2 ;
 }
 
 .d {
-    grid-column: 3;
-    grid-row: 2 ;
-    text-align: center;
+  grid-column: 3;
+  grid-row: 2 ;
+  text-align: center;
 }
 
 .e {
@@ -54,4 +48,3 @@ body {
   grid-column:3;
   grid-row: 4;
 } 
-    
