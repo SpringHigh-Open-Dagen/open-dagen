@@ -6,6 +6,9 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 const tipButtonsElement = document.getElementById('tip-btn')
 const tipbutton = document.getElementById('tip-btn')
 const tiptext = document.getElementById("tip-text")
+const uitslagbutton = document.getElementById('uitslag-btn')
+const uistlagelement = document.getElementById('uitslag')
+
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -18,6 +21,7 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+uitslagbutton.addEventListener('click', uitslag)
 //starts game 
 function startGame() {
   startButton.classList.add('hide')
@@ -64,8 +68,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'stop'
-    startButton.classList.remove('hide')
+    uitslagbutton.classList.remove('hide')
   }
 }
 //is een vraag goed of fout
@@ -93,6 +96,13 @@ function removetips () {
   tiptext.classList.add('hide')
 }
 
+function uitslag () {
+    tipbutton.classList.add('hide')
+    uitslagbutton.classList.add('hide')
+    questionElement.classList.add('hide')
+    questionContainerElement.classList.add('hide')
+    uistlagelement.classlist.remove('hide')
+}
 
 
 
