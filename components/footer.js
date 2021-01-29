@@ -12,7 +12,7 @@ class Footer extends HTMLElement {
             'gr-footer-left gr-footer-middle gr-footer-right';
           grid-gap: 10px;
           width: 100%;
-          background-color: rgb(83, 205, 138);
+          background-color: #00cd86;
           padding: 20px 0px;
           text-align: center;
           text-decoration: none;
