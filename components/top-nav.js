@@ -8,7 +8,7 @@ class TopNav extends HTMLElement {
       <style>
         .topnav {
           overflow: hidden;
-          background-color: #52A68F;
+          background-color: rgb(83, 205, 138);
           padding: 10px;
         }
         
@@ -22,7 +22,7 @@ class TopNav extends HTMLElement {
         }
         
         .topnav a:hover {
-          background-color: #52A68F;
+          background-color: rgb(83, 205, 138);
           color: black;
         }
         
@@ -110,6 +110,7 @@ class TopNav extends HTMLElement {
             <a href="/faq/home_faq.html">FAQ</a>
             <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
             <a href="/ouders/home_ouders.html">Ouders</a>
+            <a href="/leerlingen/quiz/quiz.html">Quiz</a>
           </div>
         </div>
       `;
