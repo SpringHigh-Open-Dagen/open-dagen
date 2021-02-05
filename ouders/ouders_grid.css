@@ -7,12 +7,6 @@
   margin: auto;
 }
 
-.box {
-  border-radius: 5px;
-  padding: 20px;
-  background-color: none;
-}
-
 .a {
   grid-column: 1 / span 3;
   grid-row: 1;

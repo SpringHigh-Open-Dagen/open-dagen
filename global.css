@@ -13,15 +13,17 @@ body{
     --bg-color: whitesmoke;
     --heading-color: white;
     --planning: lightgray;
+    --link-pressed: navy;
 }
 
 [data-theme="dark"] {
     --primary-color: whitesmoke;
     --secondary-color: whitesmoke;
     --font-color: whitesmoke;
-    --bg-color: #161625;
+    --bg-color: #000d1a;
     --heading-color: whitesmoke;
     --planning: dimgray;
+    --link-pressed: blue;
 }
 /* darkmode end*/
 
@@ -31,14 +33,20 @@ body{
   float: left;
 }
 
+.box {
+    padding: 20px;
+    background-color: none;
+    text-align: left;
+}
+
 a:link {
   color: var(--primary-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
-  text-decoration: none;
-  color: var(--primary-color);
+  text-decoration: italic;
+  color: var(--link-pressed);
 }
 
 a:hover {
@@ -53,8 +61,4 @@ a:active {
 
 li {
   float: left;
-}
-
-.bug-fix{
-  text-align: left;
 }
