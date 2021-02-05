@@ -101,12 +101,11 @@ class TopNav extends HTMLElement {
           <a href="/index.html"><img src="/images/logo_3.png" width="200"></a>
           <a href="/index.html">Home</a>
 
-          <a class="topnav-push-right" href="/faq/home_faq.html">FAQ</a>
-          <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
+          <a class="topnav-push-right" href="/leerlingen/home_leerlingen.html">Leerlingen</a>
           <a href="/ouders/home_ouders.html">Ouders</a>
-          <a href="/leerlingen/quiz/quiz.html">Quiz</a>
-          <a href="/projecten/projecten.html">Projecten</a>
           <a href="/SH-team/team.html">Ons team</a>
+          <a href="/leerlingen/quiz/quiz.html">Quiz</a>
+          <a href="/faq/home_faq.html">FAQ</a>
           <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
               <input type="checkbox" id="checkbox" />

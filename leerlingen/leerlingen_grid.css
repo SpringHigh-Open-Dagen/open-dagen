@@ -6,13 +6,6 @@
   margin: auto;
 }
 
-.box {
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  background-color: gray;   
-}
-
 .a {
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -42,3 +35,5 @@
   grid-column:3;
   grid-row: 3;
 }
+
+

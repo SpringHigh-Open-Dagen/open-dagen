@@ -23,8 +23,8 @@ class Slideshow extends HTMLElement {
         }
 
         .mySlides img {
-          width: 100%;
-          height: 100%;
+          height: 480px;
+          width: 820px;
         }
 
         /* Next & previous buttons */
@@ -51,7 +51,7 @@ class Slideshow extends HTMLElement {
 
         /* Position the "next button" to the right */
         .next {
-          right: 0;
+          right: 50px;
           border-radius: 3px 0 0 3px;
         }
 
@@ -117,27 +117,19 @@ class Slideshow extends HTMLElement {
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="https://www.springhigh.nl/fileadmin/_processed_/9/1/csm_Website_1_597407e81e.jpg">
-          <div class="text1">Caption Text</div>
+          <img src="https://i.imgur.com/WYNaQAl.jpg?1">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="https://images1.persgroep.net/rcs/G48NhAo6vJV-lxck38kq5GYZwqk/diocontent/131148409/_crop/0/0/1580/893/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8">
-          <div class="text">Caption Two</div>
+          <img src="https://i.imgur.com/3rJFOdX.jpg?1">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="https://www.curriculum.nu/assets/uploads/2018/09/Spring-High-aan-de-slag-voor-Curriculum.nu_.png">
-          <div class="text">Caption Three</div>
+          <img src="https://imgur.com/icx3yQC.jpg">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="https://www.springhigh.nl/fileadmin/_processed_/1/8/csm_BI3C9848_397b9b8857.jpg">
-          <div class="text">Caption four</div>
+          <img src="https://i.imgur.com/w1A8cmd.jpg?1">
         </div>
 
         <!-- Next and previous buttons -->

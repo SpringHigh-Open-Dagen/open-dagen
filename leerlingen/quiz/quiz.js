@@ -3,25 +3,21 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const tipButtonsElement = document.getElementById('tip-btn')
-const tipbutton = document.getElementById('tip-btn')
-const tiptext = document.getElementById("tip-text")
 const uitslagbutton = document.getElementById('uitslag-btn')
-const uistlagelement = document.getElementById('uitslag')
+const uitslagelement = document.getElementById('uitslag-text')
+
 
 
 let shuffledQuestions, currentQuestionIndex
 
 //these are the buttons
-nextButton.addEventListener('click', removetips)
-startButton.addEventListener('click', removetips)
-tipbutton.addEventListener('click', showtips )
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
 uitslagbutton.addEventListener('click', uitslag)
+
 //starts game 
 function startGame() {
   startButton.classList.add('hide')
@@ -86,25 +82,13 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
-//laat tips zien als je op ? klikt
-function showtips () {
-  tiptext.classList.remove('hide')
-}
-
-//haalt tips weg als je op volgende of opnieuw klikt
-function removetips () {
-  tiptext.classList.add('hide')
-}
 
 function uitslag () {
-    tipbutton.classList.add('hide')
     uitslagbutton.classList.add('hide')
     questionElement.classList.add('hide')
     questionContainerElement.classList.add('hide')
-    uistlagelement.classlist.remove('hide')
+    uitslagelement.classlist.remove('hide')
 }
-
-
 
 
 
@@ -115,16 +99,14 @@ function uitslag () {
 
 const questions = [
   {
-    question: 'Welk van deze Leraren geven Wiskunde?',
+    question: 'Welke van deze Leraren geven Wiskunde?',
     answers: [
       { text: 'Mascha', correct: true },
-      { text: 'Arriane', correct: false },
+      { text: 'Ariane', correct: false },
       { text: 'Andre', correct: true },
       { text: 'Rianne', correct: false },
     ],
-    Tip: [
-      { text: 'hallo ik heet gerard'}
-    ]
+
   },
   {
     question: 'Hoe vaak per week hebben wij sport?',
@@ -134,9 +116,6 @@ const questions = [
       { text: 'Om de week', correct: false },
       { text: 'Nooit', correct: false },
     ],
-    Tip: [
-      { text: 'hallo ik heet gerard'}
-    ]
   },
   {
     question: 'Hoe heet onze directrice?',
@@ -146,31 +125,22 @@ const questions = [
       { text: 'Camyre', correct: true },
       { text: 'Rianne', correct: false }
     ],
-    Tip: [
-      { text: 'hallo ik heet gerard'}
-    ]
   },
   {
-    question: 'Hoelaat start leerplein Rood', 
+    question: 'Hoe laat start leerplein Rood', 
     answers: [
       { text: 'Om 10 uur', correct: false },
       { text: 'om 8:30', correct: false },
       { text: 'om 9:30', correct: true },
       { text: 'om 9 uur', correct: false }
     ],
-    Tip: [
-      { text: 'hallo ik heet gerard'}
-    ]
   },
   {
     question: 'In welke straat ligt Spring High ',
     answers: [
     {text: 'Hermanpoortstraat', correct: true },
-    {text: 'Burgemeester de vlucht laan', correct: false },
-    {text: 'Annie MG schmidt straat', correct: false },
+    {text: 'Burgemeester de Vlugt laan', correct: false },
+    {text: 'Annie MG Schmidt straat', correct: false },
   ],
-  Tip: [
-    { text: 'hallo ik heet gerard'}
-  ]
   }
 ]

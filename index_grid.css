@@ -1,20 +1,13 @@
 .wrapper {
     display: grid;
     grid-template-areas:
-      'gr-slideshow gr-slideshow gr-slideshow gr-slideshow gr-planning'
+      'gr-slideshow gr-slideshow gr-slideshow gr-planning gr-planning'
       'gr-info-site gr-info-site gr-quotes    gr-quotes    gr-quotes'
       'gr-camyre    gr-article1  gr-article1  gr-article2  gr-article2';
     grid-gap: 10px;
-    grid-template-rows: 400px auto auto;
+    grid-template-rows: 500px auto auto;
     width: 1200px;
     margin: auto;
-}
-
-.box {
-    padding: 20px;
-    font-size: 100%;
-    background-color: none;
-    text-align: left;
 }
  
 .slideshow {
