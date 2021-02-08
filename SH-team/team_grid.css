@@ -1,0 +1,47 @@
+.video {
+  background-color: var(--planning);
+  border: 3px solid #00cd86;
+}
+
+.wrapper{
+  grid-gap: 10px;
+  display: grid;
+  grid-template-areas:
+  '  text text text   ' 
+  '  Camyre Karin Rianne  '
+  '  Rosalie Mascha Marion  '
+  '  Femke Indy Ariane   '
+  '  Christel . .   '
+  ' . . . ';
+  grid-template-rows: 216px 216px 216px 216px 216px;
+  /* grid-template-columns:566px 566px 566px; */
+  grid-template-columns:406px 406px 406px;
+  justify-content: center;
+  
+}
+
+.Camyre{
+  color:red;
+  grid-area: Camyre;
+}
+
+Karin{
+  grid-area: Karin;
+  
+}
+Rianne{
+  grid-area: Rianne;
+  
+}
+Rosalie{
+  grid-area: Rosalie;
+  
+}
+Mascha{
+  grid-area: Mascha;
+}
+
+text-block{
+  grid-area: text;
+  text-align: center;
+}

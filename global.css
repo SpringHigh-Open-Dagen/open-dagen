@@ -1,0 +1,64 @@
+body{
+  font-family: "Trebuchet MS","trebuchet","Helvetica",Sans-Serif !important;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 0;
+}
+
+/*code for the darkmode*/
+:root {
+    --primary-color: black;
+    --secondary-color: black;
+    --font-color: black;
+    --bg-color: whitesmoke;
+    --heading-color: white;
+    --planning: lightgray;
+    --link-pressed: navy;
+}
+
+[data-theme="dark"] {
+    --primary-color: whitesmoke;
+    --secondary-color: whitesmoke;
+    --font-color: whitesmoke;
+    --bg-color: #000d1a;
+    --heading-color: whitesmoke;
+    --planning: dimgray;
+    --link-pressed: blue;
+}
+/* darkmode end*/
+
+/*-- round fotos --*/
+.img-round {
+  border-radius: 40%;
+  float: left;
+}
+
+.box {
+    padding: 20px;
+    background-color: none;
+    text-align: left;
+}
+
+a:link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: italic;
+  color: var(--link-pressed);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+a:active {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+li {
+  float: left;
+}

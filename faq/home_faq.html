@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="/top-nav.js" type="text/javascript" defer></script>
-    <link href="/style.css" rel="stylesheet" type="text/css"/>
-    <script src="/script.js"></script>
-  </head>
-  <body>
-    <top-nav></top-nav>
+
+<head>
+	<title>FAQ</title>
+	<script src="/components/top-nav.js" type="text/javascript" defer></script>
+	<script src="/components/footer.js" type="text/javascript" defer>
+	</script>
+	<link href="/global.css" rel="stylesheet" type="text/css" />
+  <link href="faq_grid.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QCT8PRZJCN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QCT8PRZJCN');
+</script>
+</head>
+
+<body>
+	<top-nav></top-nav>
+
+	<div class="wrapper">
+		<div class="box a">
+			<h1>Frequently asked questions</h1>
+		</div>
+		<div class="box b"></div>
+		<div class="box c">
+			<h3>Wat zijn de school tijden?</h3>
+			<p>Een normale dag op Spring High voor onderbouw is 09:00 tot 15:00 en pauze van 12:00 tot 12:30. Er zijn ook kleine
+				pauzes, twee keer van 15 minuten in de ochtend en middag.<br>
+      Voor bovenbouw is het van 09:30 tot 16:00 en pauze van 12:00 tot 12:30, de kleine pauzes zijn twee keer van 15 minuten in de ochtend en middag.</p>
     </div>
-    <div class="wrapper">
-      <div class="box a"><h1>Frequently asked questions</h1></div>  
-      <div class="box b"></div>
-      <div class="box c"><h1>Wat zijn de school tijden?</h1><p>Een normale dag op spring high voor onderbouw is 09:00 tot 15:00 en pauze van 12:00 tot 12:30 en er zijn ook kleinen pauze twee keer van 15 min in de ochtend en middag<br><br>
-      en voor bovenbouw is het van 09:30 tot 16:00 en pauze van 12:00 tot 12:30 en er zijn ook kleinen pauze twee keer van 15 min in de ochtend en middag</div>
-      <div class="box d"><h1>Waar is springhigh?</h1><p>Herman Poortstraat 17, 1064 BR Amsterdam</p></div>
-      <div class="box e"></div>
-      <div class="box f"></div>
-      <div class="box g"></div>
-      <div class="box h"></div>
-      <div class="box i"></div>
+    <div class="box d"><h3>Waar is Spring High?</h3><p>Herman Poortstraat 17, 1064 BR Amsterdam</p></div>
+    <div class="box e">
+      Voor vragen 
+      <a href="mailto: info@springhigh.nl">
+        Klik hier </a>
     </div>
-  </body>
+    <div class="box f"><h3>Waar staan we voor?</h3>
+    <p>Wij stimuleren onze leerlingen om zich te ontwikkelen en zich te ontplooien tot een zelfbewuste jongvolwassene die zichzelf en de wereld wat te bieden heeft.
+      Persoonlijk talent ontdekken en ontwikkelen staat centraal. Daar hoort bij dat leerlingen ook leren waar zij niet goed in zijn. Fouten en verkeerde keuzes maken, horen bij het onderwijsproces. 'Failing Forward' is het motto voor veilig en goed leren op Spring High.</p>
+    </div>
+    <div class="box g"></div>
+    <div class="box h"></div>
+    <div class="box i"></div>
+  </div>
+
+  <sh-footer></sh-footer>
+</body>
 </html>
