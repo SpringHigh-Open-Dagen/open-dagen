@@ -127,7 +127,7 @@ const questions = [
     ],
   },
   {
-    question: 'Hoe laat start leerplein Rood', 
+    question: 'Hoe laat start leerplein Rood?', 
     answers: [
       { text: 'Om 10 uur', correct: false },
       { text: 'om 8:30', correct: false },
@@ -136,11 +136,23 @@ const questions = [
     ],
   },
   {
-    question: 'In welke straat ligt Spring High ',
+    question: 'In welke straat ligt Spring High?',
     answers: [
-    {text: 'Hermanpoortstraat', correct: true },
+    {text: 'Herman poortstraat', correct: true },
     {text: 'Burgemeester de Vlugt laan', correct: false },
     {text: 'Annie MG Schmidt straat', correct: false },
   ],
-  }
+  },
+    {
+    question: 'Hoelang bestaat Springhigh?',
+    answers: [
+    {text: 'Drie jaar', correct: false },
+    {text: 'Vier jaar', correct: false },
+    {text: 'Vijf jaar', correct: true },
+    {text: 'Zeven jaar', correct: false },
+  ],
+  },
+    {
+      question: ''
+    }
 ]
