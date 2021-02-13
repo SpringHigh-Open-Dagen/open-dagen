@@ -20,7 +20,6 @@ class TopNav extends HTMLElement {
         .topnav-text-link a {
           color: white;
           text-align: center;
-          // padding: 14px 16px;
           padding: 10px 10px;
           text-decoration: none;
           font-size: 17px;
@@ -34,10 +33,6 @@ class TopNav extends HTMLElement {
         .topnav-text-link a.active {
           background-color: #14715D;
           color: black;
-        }
-
-        a img {
-          padding: 0px 0px;
         }
 
         /*Simple css to style it like a toggle switch*/
