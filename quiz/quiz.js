@@ -5,7 +5,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const uitslagbutton = document.getElementById('uitslag-btn')
 const uitslagelement = document.getElementById('uitslag-text')
-
+const controlelement = document.getElementById('controls')
 
 
 let shuffledQuestions, currentQuestionIndex
@@ -25,6 +25,7 @@ function startGame() {
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
+  controlelement.classList.add('hide')
 }
 //kiest een random vraag
 function setNextQuestion() {
@@ -152,7 +153,4 @@ const questions = [
     {text: 'Zeven jaar', correct: false },
   ],
   },
-    {
-      question: ''
-    }
 ]

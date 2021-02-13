@@ -27,7 +27,9 @@ body.wrong {
 }
 
 .container {
-  width: 800px;
+  margin: 50px;
+  width: 1200px;
+  height: auto;
   max-width: 80%;
   background-color: #43BF7D;
   border-radius: 5px;
@@ -36,6 +38,7 @@ body.wrong {
   grid-area: grd-quiz;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
+  justify-content: center;
 }
 
 .btn-grid {
@@ -43,6 +46,7 @@ body.wrong {
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
+  justify-self: center;
 }
 
 .btn {
@@ -54,6 +58,7 @@ body.wrong {
   color: white;
   outline: none;
   margin: 5px;
+
 }
 
 .btn:hover {
@@ -75,25 +80,27 @@ body.wrong {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
+  justify-self: center;
 }
 
 .controls {
-  
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  width: auto;
+  font-size: 100;
 }
 
 .hide {
   display: none;
 }
 
-.item {
-}
-
 .start-btn {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
-  grid-column: 5    / 7;
-  grid-row: auto;
+  height: 150px;
+  width: 250px;
 }
 
 .tip-btn {
@@ -116,4 +123,8 @@ body.wrong {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
+}
+.extra-controls {
+  display: flex;
+  justify-content: center;
 }

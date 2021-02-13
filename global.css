@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Century Gothic,CenturyGothic,AppleGothic,sans-serif" !important;
   background-color: var(--bg-color);
   color: var(--font-color);
@@ -34,9 +34,9 @@ body{
 }
 
 .box {
-    padding: 20px;
-    background-color: none;
-    text-align: left;
+  padding: 20px;
+  background-color: none;
+  text-align: left;
 }
 
 a:link {
@@ -62,6 +62,7 @@ a:active {
 li {
   float: left;
 }
+
 /*buton's home page loking good*/
 .button {
   font: bold 11px Arial;
