@@ -13,11 +13,8 @@
   '  Femke Indy Ariane   '
   '  Christel . .   '
   ' . . . ';
-  grid-template-rows: 216px 216px 216px 216px 216px;
-  /* grid-template-columns:566px 566px 566px; */
-  grid-template-columns:406px 406px 406px;
-  justify-content: center;
-  
+  max-width: 1200px;
+  margin: auto;
 }
 
 .Camyre{
