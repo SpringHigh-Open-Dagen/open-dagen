@@ -42,3 +42,28 @@ text-block{
   grid-area: text;
   text-align: center;
 }
+
+
+
+/* Display for smaller screens */
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-areas:
+    'text'
+    'Camyre'
+    'Karin'
+    'Rianne'
+    'Rosalie'
+    'Mascha'
+    'Marion'
+    'Femke'
+    'Indy'
+    'Ariane'
+    'Christel'
+    '.'
+    '.'
+    '.'
+    '.';
+    grid-template-rows: 200px;
+  }
+}

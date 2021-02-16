@@ -139,7 +139,7 @@ const questions = [
   {
     question: 'In welke straat ligt Spring High?',
     answers: [
-    {text: 'Herman poortstraat', correct: true },
+    {text: 'Herman Poortstraat', correct: true },
     {text: 'Burgemeester de Vlugt laan', correct: false },
     {text: 'Annie MG Schmidt straat', correct: false },
   ],

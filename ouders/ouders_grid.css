@@ -1,44 +1,36 @@
 
-.wrapper {
+.wrapper{
+  grid-gap: 10px;
   display: grid;
-  grid-gap: 0px;
-  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+  ' Title Title . '
+  ' Curriculum Foto Foto '
+  ' Ontewikkeling Samenleving Samenleving  '
+  ' . Persoonsvorming Persoonsvorming ';
   max-width: 1200px;
   margin: auto;
 }
 
-.a {
-  grid-column: 1 / span 3;
-  grid-row: 1;
+.Title{
+  grid-area: Title;
+}  
+
+.Curriculum{
+  grid-area: Curriculum;
 }
 
-.b {
-  grid-column: 0 ;
-  grid-row: 0;
+.Foto{
+  grid-area: Foto;
 }
 
-.c {
-  grid-column: 1 / span 2 ;
-  grid-row: 2 ;
+.Ontewikkeling{
+  grid-area: Ontwikkeling;
 }
 
-.d {
-  grid-column: 3;
-  grid-row: 2 ;
-  text-align: center;
+.Samenleving{
+  grid-area: Samenleving;
 }
 
-.e {
-  grid-column: 1 / span 2;
-  grid-row: 3;
+.Persoonsvorming{
+  grid-area: Persoonsvorming;
 }
-
-.f {
-  grid-column:3;
-  grid-row: 3;
-}
-
-.g {
-  grid-column:3;
-  grid-row: 4;
-} 
