@@ -5,7 +5,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const uitslagbutton = document.getElementById('uitslag-btn')
 const uitslagelement = document.getElementById('uitslag-text')
-
+const controlelement = document.getElementById('controls')
 
 
 let shuffledQuestions, currentQuestionIndex
@@ -25,6 +25,7 @@ function startGame() {
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
+  controlelement.classList.add('hide')
 }
 //kiest een random vraag
 function setNextQuestion() {
@@ -127,7 +128,7 @@ const questions = [
     ],
   },
   {
-    question: 'Hoe laat start leerplein Rood', 
+    question: 'Hoe laat start leerplein Rood?', 
     answers: [
       { text: 'Om 10 uur', correct: false },
       { text: 'om 8:30', correct: false },
@@ -136,11 +137,20 @@ const questions = [
     ],
   },
   {
-    question: 'In welke straat ligt Spring High ',
+    question: 'In welke straat ligt Spring High?',
     answers: [
-    {text: 'Hermanpoortstraat', correct: true },
+    {text: 'Herman Poortstraat', correct: true },
     {text: 'Burgemeester de Vlugt laan', correct: false },
     {text: 'Annie MG Schmidt straat', correct: false },
   ],
-  }
+  },
+    {
+    question: 'Hoelang bestaat Springhigh?',
+    answers: [
+    {text: 'Drie jaar', correct: false },
+    {text: 'Vier jaar', correct: false },
+    {text: 'Vijf jaar', correct: true },
+    {text: 'Zeven jaar', correct: false },
+  ],
+  },
 ]

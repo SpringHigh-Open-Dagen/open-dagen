@@ -23,8 +23,9 @@ class Slideshow extends HTMLElement {
         }
 
         .mySlides img {
-          height: 480px;
-          width: 820px;
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
         }
 
         /* Next & previous buttons */
@@ -51,7 +52,7 @@ class Slideshow extends HTMLElement {
 
         /* Position the "next button" to the right */
         .next {
-          right: 50px;
+          right: 0;
           border-radius: 3px 0 0 3px;
         }
 
@@ -143,6 +144,7 @@ class Slideshow extends HTMLElement {
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
       </div>
       `;
   }
