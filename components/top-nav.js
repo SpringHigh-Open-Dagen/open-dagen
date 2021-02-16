@@ -8,112 +8,105 @@ class TopNav extends HTMLElement {
       <style>
         .topnav {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
-          overflow: hidden;
           background-color: #00cd86;
-          padding: 10px;
         }
 
         .topnav-push-right {
           margin-left: auto;
         }
-        
-        .topnav a {
+
+        .topnav-text-link a {
           color: white;
           text-align: center;
-          padding: 14px 16px;
+          padding: 10px 10px;
           text-decoration: none;
           font-size: 17px;
         }
         
-        .topnav a:hover {
+        .topnav-text-link a:hover {
           background-color: #00cd86;
           color: black;
         }
         
-        .topnav a.active {
+        .topnav-text-link a.active {
           background-color: #14715D;
           color: black;
         }
 
         /*Simple css to style it like a toggle switch*/
-        .theme-switch-wrapper {
-          display: flex;
-          align-items: center;
-          float: right;
-          margin-top: 6px;
-            em {
-              margin-left: 10px;
-              font-size: 1rem;
-            }
-          }
-          .theme-switch {
-            display: inline-block;
-            height: 34px;
-            position: relative;
-            width: 60px;
-          }
-          
-          .theme-switch input {
-            display:none;
-          }
-          
-          .slider {
-            background-color: #ccc;
-            bottom: 0;
-            cursor: pointer;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transition: .4s;
-          }
-          
-          .slider:before {
-            background-color: #fff;
-            bottom: 4px;
-            content: "";
-            height: 26px;
-            left: 4px;
-            position: absolute;
-            transition: .4s;
-            width: 26px;
-          }
-          
-          input:checked + .slider {
-            background-color: #66bb6a;
-          }
-          
-          input:checked + .slider:before {
-            transform: translateX(26px);
-          }
-          
-          .slider.round {
-            border-radius: 34px;
-          }
-          
-          .slider.round:before {
-            border-radius: 50%;
-          }
-        </style>
+        .theme-switch {
+          display: inline-block;
+          height: 34px;
+          position: relative;
+          width: 60px;
+          margin-right:10px;
+        }
+        
+        .theme-switch input {
+          display:none;
+        }
+        
+        .slider {
+          background-color: #ccc;
+          bottom: 0;
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: .4s;
+        }
+        
+        .slider:before {
+          background-color: #fff;
+          bottom: 4px;
+          content: "";
+          height: 26px;
+          left: 4px;
+          position: absolute;
+          transition: .4s;
+          width: 26px;
+        }
+        
+        input:checked + .slider {
+          background-color: #66bb6a;
+        }
+        
+        input:checked + .slider:before {
+          transform: translateX(26px);
+        }
+        
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      </style>
 
-        <div class="topnav">
-          <a href="/index.html"><img src="/images/logo_3.png" width="200"></a>
+      <div class="topnav">
+        <a href="/index.html"><img src="/images/logo_3.png" width="200"></a>
+        <div class="topnav-text-link">
           <a href="/index.html">Home</a>
-
-          <a class="topnav-push-right" href="/leerlingen/home_leerlingen.html">Leerlingen</a>
+          <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
           <a href="/ouders/home_ouders.html">Ouders</a>
+          <!--a href="/online-lessen/lessen.html">Kraampjes</a-->
           <a href="/SH-team/team.html">Ons team</a>
-          <a href="/leerlingen/quiz/quiz.html">Quiz</a>
+          <a href="/projecten/projecten.html">Projecten</a>
+          <a href="/quiz/quiz.html">Quiz</a>
           <a href="/faq/home_faq.html">FAQ</a>
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round"></div>
-            </label>
-          </div>
         </div>
-      `;
+        <div class="topnav-push-right">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+    `;
   }
 }
 

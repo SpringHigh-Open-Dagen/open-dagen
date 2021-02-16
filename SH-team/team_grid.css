@@ -13,11 +13,8 @@
   '  Femke Indy Ariane   '
   '  Christel . .   '
   ' . . . ';
-  grid-template-rows: 216px 216px 216px 216px 216px;
-  /* grid-template-columns:566px 566px 566px; */
-  grid-template-columns:406px 406px 406px;
-  justify-content: center;
-  
+  max-width: 1200px;
+  margin: auto;
 }
 
 .Camyre{
@@ -44,4 +41,29 @@ Mascha{
 text-block{
   grid-area: text;
   text-align: center;
+}
+
+
+
+/* Display for smaller screens */
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-areas:
+    'text'
+    'Camyre'
+    'Karin'
+    'Rianne'
+    'Rosalie'
+    'Mascha'
+    'Marion'
+    'Femke'
+    'Indy'
+    'Ariane'
+    'Christel'
+    '.'
+    '.'
+    '.'
+    '.';
+    grid-template-rows: 200px;
+  }
 }
