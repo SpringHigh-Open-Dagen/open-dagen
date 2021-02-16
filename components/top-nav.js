@@ -93,7 +93,7 @@ class TopNav extends HTMLElement {
           <a href="/index.html">Home</a>
           <a href="/leerlingen/home_leerlingen.html">Leerlingen</a>
           <a href="/ouders/home_ouders.html">Ouders</a>
-          <a href="/online-lessen/lessen.html">Kraampjes</a>
+          <!--a href="/online-lessen/lessen.html">Kraampjes</a-->
           <a href="/SH-team/team.html">Ons team</a>
           <a href="/projecten/projecten.html">Projecten</a>
           <a href="/quiz/quiz.html">Quiz</a>

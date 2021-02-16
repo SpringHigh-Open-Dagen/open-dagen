@@ -1,0 +1,54 @@
+
+.wrapper{
+  grid-gap: 10px;
+  display: grid;
+  grid-template-areas: 
+  ' Title Title . '
+  ' Curriculum Foto Foto '
+  ' Ontwikkeling Samenleving Samenleving  '
+  ' . Persoonsvorming Persoonsvorming ';
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Display for smaller screens */
+@media (max-width: 700px) {
+ .wrapper{
+   grid-template-areas: 
+      'Title'
+      'Curriculum'
+      'Ontwikkeling'
+      'Samenleving'
+      'Persoonsvorming';
+  padding: 10px;
+ }
+
+.Foto {
+  display: none;
+}
+}
+
+.Title {
+  grid-area: Title;
+}  
+
+.Curriculum {
+  grid-area: Curriculum;
+}
+
+.Foto {
+  grid-area: Foto;
+}
+
+.Ontwikkeling {
+  grid-area: Ontwikkeling;
+}
+
+.Samenleving {
+  grid-area: Samenleving;
+}
+
+.Persoonsvorming {
+  grid-area: Persoonsvorming;
+}
+
