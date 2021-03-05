@@ -77,8 +77,8 @@ li {
   border-radius: 50px 50px 50px 50px;
 }
 
-.footer{
-    
+.footer {
+    clear: both;
     position: relative;
     margin-top: 200px;
 }

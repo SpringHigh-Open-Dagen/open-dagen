@@ -14,16 +14,17 @@
 /* Display for smaller screens */
 @media (max-width: 700px) {
   .wrapper {
+
     grid-template-areas:
-        'gr-title'
         'gr-curriculum'
         'gr-ontwikkeling'
+        'gr-foto'
         'gr-samenleving'
         'gr-persoonsvorming';
     padding: 10px;
   }
 
-  .foto {
+  .title {
     display: none;
   }
 
@@ -53,3 +54,6 @@
   grid-area: gr-persoonsvorming;
 }
 
+.exam {
+  width: 100%;
+}
