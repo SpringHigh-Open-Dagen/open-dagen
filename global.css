@@ -76,3 +76,9 @@ li {
   border-left: 1px solid #CCCCCC;
   border-radius: 50px 50px 50px 50px;
 }
+
+.footer {
+    clear: both;
+    position: relative;
+    margin-top: 200px;
+}
