@@ -6,7 +6,9 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 const uitslagbutton = document.getElementById('uitslag-btn')
 const uitslagelement = document.getElementById('uitslag-text')
 const controlelement = document.getElementById('controls')
+const countbutton = document.getElementById('count')
 
+var count = 0;
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -17,6 +19,7 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 uitslagbutton.addEventListener('click', uitslag)
+countbutton.addEventListener('click', counter)
 
 //starts game 
 function startGame() {
@@ -89,6 +92,12 @@ function uitslag () {
     questionElement.classList.add('hide')
     questionContainerElement.classList.add('hide')
     uitslagelement.classlist.remove('hide')
+}
+
+function counter () {
+  if (count = 0 ) {
+    alert("Hello World");
+  }
 }
 
 
