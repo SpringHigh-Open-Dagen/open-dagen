@@ -1,44 +1,54 @@
 
 .wrapper {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  max-width: 1200px;
-  margin: auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas:
+      'gr-title .'
+      'gr-times gr-location'
+      'gr-feedback gr-philosophy';
+    max-width: 1200px;
+    margin: auto;
 }
 
-.a {
-  grid-column: 1 / span 3;
-  grid-row: 1;
+/* Display for smaller screens */
+@media (max-width: 700px) {
+  .wrapper {
+
+    grid-template-areas:
+      'gr-title'
+      'gr-times'
+      'gr-location'
+      'gr-philosophy'
+      'gr-feedback';
+
+    padding: 10px;
+  }
+
+  .box {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
 }
 
-.b {
-  grid-column: 0;
-  grid-row: 0;
+.title {
+  grid-area: gr-title;
 }
 
-.c {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+.times {
+  grid-area: gr-times;
 }
 
-.d {
-  grid-column: 3;
-  grid-row: 2;
+.location {
+  grid-area: gr-location;
 }
 
-.e {
-  grid-column: 1 / span 2;
-  grid-row: 3;
+.feedback {
+  grid-area: gr-feedback;
 }
 
-.f {
-  grid-column: 3;
-  grid-row: 3;
+.philosophy {
+  grid-area: gr-philosophy;
 }
-
-.g {
-  grid-column: 3;
-  grid-row: 4;
-}
-
-

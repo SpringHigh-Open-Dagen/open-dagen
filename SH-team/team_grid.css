@@ -64,6 +64,10 @@ text-block{
     '.'
     '.'
     '.';
-    grid-template-rows: 200px;
+    grid-template-rows: auto;
   }
+}
+
+.video{
+  width: 100%;
 }

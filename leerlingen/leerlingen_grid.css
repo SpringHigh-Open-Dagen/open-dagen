@@ -1,46 +1,66 @@
 .wrapper {
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  'gr-springhigh gr-video1'
+  'gr-video2 gr-voorJou'
+  'gr-begeleiding gr-groep8'
+  'gr-wiskunde gr-wiskunde';
   max-width: 1200px;
   margin: auto;
 }
 
-.a {
-  grid-column: 1 / span 2;
-  grid-row: 1;
+@media (max-width: 700px) {
+  .wrapper {
+
+    grid-template-areas:
+        'gr-springhigh'
+        'gr-video1'
+        'gr-voorJou'
+        'gr-video2'
+        'gr-begeleiding'
+        'gr-groep8';
+        
+    padding: 10px;
+  }
+  
+  .wiskunde{
+    display: none;
+  }
+
 }
 
-.b {
-  grid-column: 3 ;
-  grid-row: 1;
+.springhigh {
+  grid-area: gr-springhigh;
 }
 
-.c {
-  grid-column: 1 / span 2 ;
-  grid-row: 2 ;
+.video1 {
+  grid-area: gr-video1;
 }
 
-.d {
-  grid-column: 3;
-  grid-row: 2 ;
+.video2 {
+  grid-area: gr-video2;
 }
 
-.e {
-  grid-column: 1 / span 2;
-  grid-row: 3;
+.voorJou {
+  grid-area: gr-voorJou;
 }
 
-.f {
-  grid-column:3;
-  grid-row: 3;
+.begeleiding {
+  grid-area: gr-begeleiding;
 }
 
-.g {
-  grid-column:1 / span 3;
-  grid-row: 4;
+.groep8 {
+  grid-area: gr-groep8;
 }
 
+.wiskunde {
+  grid-area: gr-wiskunde;
+}
 
+.video{
+  width: 100%;
+}
 
 

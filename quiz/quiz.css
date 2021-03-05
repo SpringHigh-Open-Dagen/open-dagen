@@ -128,3 +128,4 @@ body.wrong {
   display: flex;
   justify-content: center;
 }
+.disable {pointer-events: none;}

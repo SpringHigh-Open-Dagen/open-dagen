@@ -4,10 +4,10 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const uitslagbutton = document.getElementById('uitslag-btn')
-const uitslagelement = document.getElementById('uitslag-text')
+const uitslagelement = document.getElementById('uitslag')
 const controlelement = document.getElementById('controls')
 
-
+let countRightAnswers = 0;
 let shuffledQuestions, currentQuestionIndex
 
 //these are the buttons
@@ -18,6 +18,7 @@ nextButton.addEventListener('click', () => {
 })
 uitslagbutton.addEventListener('click', uitslag)
 
+
 //starts game 
 function startGame() {
   startButton.classList.add('hide')
@@ -26,6 +27,7 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
   controlelement.classList.add('hide')
+  countRightAnswers = 0;
 }
 //kiest een random vraag
 function setNextQuestion() {
@@ -45,6 +47,7 @@ function showQuestion(question) {
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
   })
+  answerButtonsElement.classList.remove('disable')
 }
 //Kekw
 function resetState() {
@@ -67,6 +70,8 @@ function selectAnswer(e) {
   } else {
     uitslagbutton.classList.remove('hide')
   }
+  answerButtonsElement.classList.add('disable')
+  document.getElementById('right-answers').innerHTML = countRightAnswers;
 }
 //is een vraag goed of fout
 function setStatusClass(element, correct) {
@@ -89,6 +94,11 @@ function uitslag () {
     questionElement.classList.add('hide')
     questionContainerElement.classList.add('hide')
     uitslagelement.classlist.remove('hide')
+}
+function count (){
+  if (selectedButton.dataset = correct) {
+    countRightAnswers++;
+ // +1,
 }
 
 
