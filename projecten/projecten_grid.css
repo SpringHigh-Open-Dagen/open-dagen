@@ -35,8 +35,8 @@
 }
 
 .text {
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid; */
+  /* border-color: black; */
   border-radius: 10px;
   grid-area: gr-text;
 }

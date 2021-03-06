@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/global.css" rel="stylesheet" type="text/css" />
   <link href="quiz.css" rel="stylesheet">
   <script defer src="quiz.js"></script>
   <title>Quiz App</title>
@@ -21,35 +22,47 @@
 </head>
 <body>
 <top-nav></top-nav>
-<div class="wrapper">
+ 
+  <div class="container">
 
-<span id="right-answers"></span>
-  <div id="uitslag" class="hide">yeppers</div>
+    <div class="block content">
+    
+      <div class="wrapper">
 
-  <div class="container quiz">    
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button></div>
+        <form id='form-result' class="hide" action="">
+          <div class="SP-container result">
+            <div class="modal-text-bigger">Klaar !</div>
+           
+            <div class="modal-text">Aantal goede antwoorden:</div>
 
+            <!-- 4. here's where we show right answers: span id="right-answers" -->
+            <div class="modal-text"><span id="right-answers" class="count"> 12 </span> van <span id="all-questions" class="count">count-of-questions</span> (<span id="answers-percent"></span>%)</div> 
+          </div>
+        </form>
+
+          <div id="question-container" class="hide">
+            <div class="number-of-question-text">Vraag <span id="current-question">YYY</span> Van <span id="all-questions2">XXX</span></div>
+            <div id="question">Question</div>
+            <div id="answer-buttons">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="start-btn" class="start-btn">Begin</button>
+            <button id="next-btn" class="next-btn hide">Volgende</button>
+          </div>
+
+        </div><!-- wrapper-->
+
+      </div><!-- block content-->
+  
     </div>
-    <div class="extra-controls">
-      <button id="next-btn" class="next-btn btn hide">Volgende</button>
-      <button id="uitslag-btn" class="uitslag-btn btn hide">Uitslag</button>
-    </div>
 
-    <div class="controls" id="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
+<sh-footer></sh-footer>
 
-
-    </div>
-  </div>
-</div>
-
- <sh-footer></sh-footer>
 </body>
+
 </html>
