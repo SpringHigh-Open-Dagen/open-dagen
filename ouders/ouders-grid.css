@@ -1,54 +1,59 @@
 
-.wrapper{
+.wrapper {
   grid-gap: 10px;
   display: grid;
   grid-template-areas: 
-  ' Title Title . '
-  ' Curriculum Foto Foto '
-  ' Ontwikkeling Samenleving Samenleving  '
-  ' . Persoonsvorming Persoonsvorming ';
-  max-width: 1200px;
-  margin: auto;
+  ' gr-title gr-title . '
+  ' gr-curriculum gr-foto gr-foto '
+  ' gr-ontwikkeling gr-samenleving gr-samenleving  '
+  ' . gr-persoonsvorming gr-persoonsvorming ';
+  max-width: 1200px; 
+  margin: auto; 
 }
 
 /* Display for smaller screens */
 @media (max-width: 700px) {
- .wrapper{
-   grid-template-areas: 
-      'Title'
-      'Curriculum'
-      'Ontwikkeling'
-      'Samenleving'
-      'Persoonsvorming';
-  padding: 10px;
- }
+  .wrapper {
 
-.Foto {
-  display: none;
-}
+    grid-template-areas:
+        'gr-curriculum'
+        'gr-ontwikkeling'
+        'gr-foto'
+        'gr-samenleving'
+        'gr-persoonsvorming';
+    padding: 10px;
+  }
+
+  .title {
+    display: none;
+  }
+
 }
 
-.Title {
-  grid-area: Title;
+.title {
+  grid-area: gr-title;
 }  
 
-.Curriculum {
-  grid-area: Curriculum;
+.curriculum {
+  grid-area: gr-curriculum;
 }
 
-.Foto {
-  grid-area: Foto;
+.foto {
+  grid-area: gr-foto;
 }
 
-.Ontwikkeling {
-  grid-area: Ontwikkeling;
+.ontwikkeling {
+  grid-area: gr-ontwikkeling;
 }
 
-.Samenleving {
-  grid-area: Samenleving;
+.samenleving {
+  grid-area: gr-samenleving;
 }
 
-.Persoonsvorming {
-  grid-area: Persoonsvorming;
+.persoonsvorming {
+  grid-area: gr-persoonsvorming;
 }
 
+.exam {
+  width: 100%;
+}

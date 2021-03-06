@@ -1,39 +1,56 @@
 .wrapper {
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  'gr-project gr-crowdfunding'
+  'gr-text gr-nieuws'
+  'gr-area1 gr-area2';
   max-width: 1200px;
   margin: auto;
 }
 
-.a {
-  grid-column: 1 / span 2;
-  grid-row: 1;
+@media (max-width: 700px) {
+  .wrapper {
+
+    grid-template-areas:
+        'gr-text'
+        'gr-project'
+        'gr-crowdfunding'
+        'gr-nieuws'
+        'gr-area1'
+        'gr-area2';
+        
+    padding: 10px;
+  }
+  
 }
 
-.b {
-  grid-column: 3 ;
-  grid-row: 1;
+.project {
+  grid-area: gr-project;
 }
 
-.c {
-  grid-column: 1 / span 2 ;
-  grid-row: 2 ;
+.crowdfunding {
+  grid-area: gr-crowdfunding;
 }
 
-.d {
-  grid-column: 3;
-  grid-row: 2 ;
+.text {
+  /* border-style: solid; */
+  /* border-color: black; */
+  border-radius: 10px;
+  grid-area: gr-text;
 }
 
-.e {
-  grid-column: 1 / span 2;
-  grid-row: 3;
+.nieuws {
+  grid-area: gr-nieuws;
 }
 
-.f {
-  grid-column:3;
-  grid-row: 3;
+.area1 {
+  grid-area: gr-area1;
+}
+
+.area2 {
+  grid-area: gr-area2;
 }
 
 
@@ -51,4 +68,7 @@
 	content: "";
 	display: table;
 	clear: both;
+}
+.video{
+  width: 100%;
 }
